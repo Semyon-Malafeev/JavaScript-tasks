@@ -4,7 +4,6 @@
 
 //Интерфейс для ввода с терминала:
 const readline = require("readline");
-
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
@@ -19,8 +18,8 @@ function maxNum() {
       .filter((n) => !Number.isNaN(n));
 
     console.log("Введенный массив: ", array);
-
     rl.close();
+
     let count = 0;
     for (const i of array) {
       if (i > count) {
